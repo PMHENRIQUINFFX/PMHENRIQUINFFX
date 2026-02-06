@@ -1,5 +1,6 @@
 import random
 import time
+
 class Personagem:
     def __init__(self, nome, vida, energia, ataque, defesa):
         self.nome = nome
@@ -13,7 +14,7 @@ class Personagem:
         dano -= inimigo.defesa // 2
         dano = max(dano, 0)
         inimigo.vida -= dano
-        print(f"{self.nome} ataca {inimigo nome} e causa {dano} de dano!")
+        print(f"{self.nome} ataca {inimigo.nome} e causa {dano} de dano!")
 
     def usar_tecnica(self, inimigo):
         if self.energia < 20:
